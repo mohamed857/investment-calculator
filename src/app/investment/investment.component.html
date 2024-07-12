@@ -1,0 +1,39 @@
+<div class="form">
+    <app-dataform (data)="calculateInvestment($event)"></app-dataform>
+</div>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>amount</th>
+                <th>annualInvestment</th>
+                <th>returnRate</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- @for (duration of investmentData; track year) {
+
+                <tr>
+                    <td >{{year}}dd</td>
+                    <td>{{ investmentData.amount|currency }}</td>
+                    <td>{{ investmentData.annualInvestment }}</td>
+                    <td>{{ investmentData.returnRate }}</td>
+                    <td>{{ investmentData.duration }}</td>
+                </tr>
+            } -->
+            <tr>
+                <td>Marcus Thornton</td>
+                <td>SG</td>
+                <td>6'4"</td>
+                <td>05-05-1987</td>
+            </tr>
+            <tr>
+                <td>Jason Thompson</td>
+                <td>PF</td>
+                <td>6'11"</td>
+                <td>06-21-1986</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

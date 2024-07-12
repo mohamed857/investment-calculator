@@ -1,0 +1,23 @@
+<div class="investment-calculator">
+
+    <h1>Investment Calculator</h1>
+    <form (ngSubmit)="calculateInvestment()">
+        <div>
+            <label for="amount">Initial Investment:</label>
+            <input type="number" id="amount" [(ngModel)]="investmentData.amount">
+        </div>
+        <div>
+            <label for="annualInvestment">Annual Investment:</label>
+            <input type="number" id="annualInvestment" [(ngModel)]="investmentData.annualInvestment">
+        </div>
+        <div>
+            <label for="returnRate">Return Rate (%):</label>
+            <input type="number" id="returnRate" [(ngModel)]="investmentData.returnRate">
+        </div>
+        <div>
+            <label for="duration">Investment Duration (duration):</label>
+            <input type="number" id="duration" [(ngModel)]="investmentData.duration">
+  </div>
+  <button type="submit">Calculate</button>
+</form>
+</div>
