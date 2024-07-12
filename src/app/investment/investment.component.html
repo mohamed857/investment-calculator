@@ -5,23 +5,24 @@
     <table>
         <thead>
             <tr>
-                <th>amount</th>
-                <th>annualInvestment</th>
-                <th>returnRate</th>
-                <th>Duration</th>
+                <th>Year</th>
+                <th>investment Value</th>
+                <th>interest(Year)</th>
+                <th>total interest</th>
+                <th>invested capital</th>
             </tr>
         </thead>
         <tbody>
-            <!-- @for (duration of investmentData; track year) {
+            @for (invest of data; track invest) {
 
                 <tr>
-                    <td >{{year}}dd</td>
-                    <td>{{ investmentData.amount|currency }}</td>
-                    <td>{{ investmentData.annualInvestment }}</td>
-                    <td>{{ investmentData.returnRate }}</td>
-                    <td>{{ investmentData.duration }}</td>
+                    <td >{{invest.year}}dd</td>
+                    <td>{{ invest.valueEndOfYear|currency }}</td>
+                    <td>{{ invest.interest | currency }}</td>
+                    <td>{{ invest.totalInterest }}</td>
+                    <td>{{ invest.annualInvestment }}</td>
                 </tr>
-            } -->
+            }
             <tr>
                 <td>Marcus Thornton</td>
                 <td>SG</td>
