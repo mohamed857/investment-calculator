@@ -21,6 +21,9 @@ export class InvestmentComponent implements OnChanges{
   calculateInvestment(data:InvestmentData) {
     this.investmentData = data;
     this.duration.set(data.duration);
+    this.calculateInvestimentResults(this.investmentData);
+    console.log(data);
+    
   }
 
   calculateInvestimentResults(investment: InvestmentData): void {

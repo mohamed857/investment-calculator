@@ -12,11 +12,13 @@ import { InvestmentData, InvestmentResult } from '../investmentData';
 export class DataformComponent {
   @Output() data = new EventEmitter<InvestmentData>();
   // investmentData = signal<InvestmentData>({ amount: 0, duration: 0, annualInvestment: 0, returnRate: 0 });
-  investmentData! :InvestmentData;
+  investmentData :InvestmentData={
+    amount: 0, duration: 0, returnRate: 0,
+    annualInvestment:0
+  };
 
   calculateInvestment() {
     this.data.emit(this.investmentData);
-
   }
   
 }
